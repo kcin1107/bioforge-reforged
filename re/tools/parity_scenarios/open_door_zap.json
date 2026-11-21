@@ -1,0 +1,14 @@
+{
+  "name": "open_door_zap",
+  "boot": "new_game",
+  "boot_keys": "esc esc enter enter",
+  "figures": ["LEX"],
+  "fields": ["pos", "heading", "motion", "locals", "camera", "in_trig", "hull"],
+  "sample_period": 10,
+  "anchor": {"type": "control", "figure": "LEX"},
+  "duration_after_anchor": 950,
+  "inputs": [{"scan": "48", "start": 210, "end": 690}],
+  "pokes": [{"type": "phys", "name": "DR3", "state": 0, "at": 0}],
+  "reference": [{"figure": "LEX", "axis": "y", "original": -13201, "port": -13263}],
+  "tolerances": {"pos": 64, "heading": 3, "motion": 0, "locals": 0, "camera": 0, "in_trig": 0, "hull": 64}
+}

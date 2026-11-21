@@ -1,0 +1,26 @@
+# Original game data and installers: never commit (read-only, not ours to distribute)
+/game/
+/installer/
+/GOG_Galaxy_Bioforge.exe
+
+# Raw bytes and analysis databases derived from BIOFORGE.EXE
+/re/dgroup.bin
+/re/strings.tsv
+/re/ghidra/
+
+# Generated output (renders, decoded scripts, saves); research write-ups stay tracked
+/re/out/*
+!/re/out/*.md
+!/re/out/*.txt
+/out.wav
+
+# Tooling
+/re/.venv/
+.build/
+.swiftpm/
+__pycache__/
+*.pyc
+.DS_Store
+/native/build/
+/native/ThirdParty/
+/native/dist/

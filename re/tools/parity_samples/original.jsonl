@@ -1,0 +1,4 @@
+{"clock":90,"figures":{"LEX":{"flags":2,"pos":[0,0,0],"heading":359,"motion":"WAKE_UP"}}}
+{"clock":100,"figures":{"LEX":{"flags":0,"pos":[0,0,0],"heading":359,"motion":"STAND"}}}
+{"clock":110,"figures":{"LEX":{"flags":0,"pos":[10,0,0],"heading":0,"motion":"WALK"}}}
+{"clock":120,"figures":{"LEX":{"flags":0,"pos":[20,0,0],"heading":1,"motion":"WALK"}}}

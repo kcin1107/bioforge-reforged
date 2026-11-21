@@ -1,0 +1,16 @@
+{
+  "name": "opening_wake",
+  "boot": "new_game",
+  "boot_keys": "esc esc enter enter",
+  "figures": ["LEX", "FIRSTBOT"],
+  "fields": ["pos", "heading", "motion", "locals", "camera", "in_trig", "hull"],
+  "sample_period": 30,
+  "anchor": {"type": "motion", "figure": "LEX", "motion": "WAKE_UP", "after_motion": "WAKE_UP_HEAD"},
+  "duration_after_anchor": 650,
+  "inputs": [],
+  "pokes": [],
+  "reference": [{"figure": "LEX", "axis": "y", "original": -8879},
+                {"figure": "FIRSTBOT", "axis": "x", "original": -11360},
+                {"figure": "FIRSTBOT", "axis": "y", "original": -10489}],
+  "tolerances": {"pos": 64, "heading": 3, "motion": 0, "locals": 0, "camera": 0, "in_trig": 0, "hull": 64}
+}

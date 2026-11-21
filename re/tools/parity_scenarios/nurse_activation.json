@@ -1,0 +1,15 @@
+{
+  "name": "nurse_activation",
+  "boot": "new_game",
+  "boot_keys": "esc esc enter enter",
+  "figures": ["FIRSTBOT", "LEX"],
+  "fields": ["pos", "heading", "motion"],
+  "sample_period": 6,
+  "anchor": {"type": "motion", "figure": "FIRSTBOT", "motion": "ACTIVATE", "after_motion": null},
+  "duration_after_anchor": 900,
+  "inputs": [],
+  "pokes": [],
+  "reference": [{"figure": "FIRSTBOT", "axis": "x", "original": -11360},
+                {"figure": "FIRSTBOT", "axis": "y", "original": -10489}],
+  "tolerances": {"pos": 64, "heading": 3, "motion": 0}
+}

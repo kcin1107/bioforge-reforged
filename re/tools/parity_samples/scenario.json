@@ -1,0 +1,11 @@
+{
+  "name": "sample",
+  "boot": "new_game",
+  "figures": ["LEX"],
+  "fields": ["pos", "heading", "motion"],
+  "sample_period": 10,
+  "anchor": {"type": "control", "figure": "LEX"},
+  "inputs": [{"scan": "48", "start": 110, "end": 200}],
+  "pokes": [{"at": 0, "type": "phys", "name": "DR3", "state": 1}],
+  "tolerances": {"pos": 5, "heading": 2}
+}

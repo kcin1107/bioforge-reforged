@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=BioForge
+Comment=Unofficial port of the 1995 game BioForge; needs your own copy of the game
+Exec=BioForgeSDL
+Icon=bioforge
+Terminal=false
+Categories=Game;ActionGame;
+StartupWMClass=BioForge

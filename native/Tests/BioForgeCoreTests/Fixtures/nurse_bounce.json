@@ -1,0 +1,276 @@
+{
+  "source": "DOSBox-X original, 2026-10-20, nurse_validation/wall_frames.jsonl; explicit wall pose fixture",
+  "scope": "XY response at observed poses, zero persistent velocity and loss",
+  "samples": [
+    {
+      "boundary": {
+        "entry": {
+          "cs": 519,
+          "ip": 14831
+        },
+        "figure_ptr": [
+          0,
+          11095
+        ],
+        "return": {
+          "cs": 655,
+          "ip": 2559
+        },
+        "vtable": 9837
+      },
+      "clock": 4978,
+      "figures": [
+        {
+          "F": 2579,
+          "R": 89,
+          "avoid": [],
+          "base": -7135,
+          "base_heading": 11.3,
+          "bounce_loss": 0,
+          "falling": 0,
+          "flags": 208,
+          "frame": 1,
+          "frame_start": [
+            -7937,
+            -11025,
+            -4478
+          ],
+          "heading": -3.7,
+          "hull": [
+            -8141,
+            -11235,
+            -5327,
+            -7733,
+            -10827,
+            -4263
+          ],
+          "hull_bottom": -5327,
+          "in_trig": [],
+          "last_good": [
+            -7937,
+            -11031,
+            -4467
+          ],
+          "locals": [
+            50,
+            0,
+            0,
+            2,
+            2,
+            50,
+            0,
+            0,
+            0,
+            0
+          ],
+          "motion": "BOUNCE",
+          "move_delta": [
+            3,
+            -6,
+            11
+          ],
+          "name": "FIRSTBOT",
+          "pos": [
+            -7937,
+            -11031,
+            -4467
+          ],
+          "ptr": [
+            0,
+            11095
+          ],
+          "support": -7405,
+          "teeter": 0,
+          "type": "NURSEBOT",
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "vz": 0,
+          "yaw": 11
+        }
+      ]
+    },
+    {
+      "boundary": {
+        "entry": {
+          "cs": 519,
+          "ip": 14831
+        },
+        "figure_ptr": [
+          0,
+          11095
+        ],
+        "return": {
+          "cs": 655,
+          "ip": 2559
+        },
+        "vtable": 9837
+      },
+      "clock": 5014,
+      "figures": [
+        {
+          "F": 2579,
+          "R": 20,
+          "avoid": [],
+          "base": -7135,
+          "base_heading": 11.3,
+          "bounce_loss": 0,
+          "falling": 0,
+          "flags": 208,
+          "frame": 6,
+          "frame_start": [
+            -7937,
+            -11111,
+            -4535
+          ],
+          "heading": -28.0,
+          "hull": [
+            -8141,
+            -11323,
+            -5396,
+            -7733,
+            -10915,
+            -4332
+          ],
+          "hull_bottom": -5396,
+          "in_trig": [],
+          "last_good": [
+            -7937,
+            -11119,
+            -4536
+          ],
+          "locals": [
+            50,
+            0,
+            0,
+            2,
+            2,
+            50,
+            0,
+            0,
+            0,
+            0
+          ],
+          "motion": "BOUNCE",
+          "move_delta": [
+            4,
+            -8,
+            -1
+          ],
+          "name": "FIRSTBOT",
+          "pos": [
+            -7937,
+            -11119,
+            -4536
+          ],
+          "ptr": [
+            0,
+            11095
+          ],
+          "support": -7405,
+          "teeter": 0,
+          "type": "NURSEBOT",
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "vz": 0,
+          "yaw": 28
+        }
+      ]
+    },
+    {
+      "boundary": {
+        "entry": {
+          "cs": 519,
+          "ip": 14831
+        },
+        "figure_ptr": [
+          0,
+          11095
+        ],
+        "return": {
+          "cs": 655,
+          "ip": 2559
+        },
+        "vtable": 9837
+      },
+      "clock": 5055,
+      "figures": [
+        {
+          "F": 2579,
+          "R": 85,
+          "avoid": [],
+          "base": -7135,
+          "base_heading": -21.6,
+          "bounce_loss": 0,
+          "falling": 0,
+          "flags": 208,
+          "frame": 3,
+          "frame_start": [
+            -7937,
+            -11175,
+            -4460
+          ],
+          "heading": -49.9,
+          "hull": [
+            -8141,
+            -11377,
+            -5331,
+            -7733,
+            -10969,
+            -4267
+          ],
+          "hull_bottom": -5331,
+          "in_trig": [],
+          "last_good": [
+            -7937,
+            -11173,
+            -4471
+          ],
+          "locals": [
+            50,
+            0,
+            0,
+            2,
+            2,
+            50,
+            0,
+            0,
+            0,
+            0
+          ],
+          "motion": "BOUNCE",
+          "move_delta": [
+            5,
+            2,
+            -11
+          ],
+          "name": "FIRSTBOT",
+          "pos": [
+            -7937,
+            -11173,
+            -4471
+          ],
+          "ptr": [
+            0,
+            11095
+          ],
+          "support": -7405,
+          "teeter": 0,
+          "type": "NURSEBOT",
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "vz": 0,
+          "yaw": 20
+        }
+      ]
+    }
+  ]
+}

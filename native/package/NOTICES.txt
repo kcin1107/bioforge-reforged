@@ -1,0 +1,29 @@
+Third-party software in this package
+====================================
+
+The full licence texts are in the licenses folder next to this file.
+
+SDL 3 (libSDL3.so.0 on Linux, SDL3.dll on Windows)
+    Simple DirectMedia Layer, Copyright (C) 1997-2026 Sam Lantinga.
+    zlib licence: licenses/SDL3.txt
+    SDL includes HIDAPI, used under its BSD-style licence: licenses/SDL3-hidapi.txt
+    and yuv2rgb: licenses/SDL3-yuv2rgb.txt
+
+Swift runtime and Foundation (linked into the program on Linux; the swift*.dll,
+Foundation*.dll, dispatch.dll and BlocksRuntime.dll files on Windows)
+    Copyright (c) Apple Inc. and the Swift project authors.
+    Apache License 2.0 with the Runtime Library Exception: licenses/Swift.txt
+
+ICU (inside Foundation: _FoundationICU)
+    Copyright (c) Unicode, Inc. and others.
+    Unicode License v3 and the third-party notices it lists: licenses/ICU.txt
+
+TinySoundFont (built into the program: the General MIDI synth)
+    Copyright (C) 2017-2025 Bernhard Schelling, based on SFZero, Copyright (C) 2012 Steve Folta.
+    MIT licence: licenses/TinySoundFont.txt
+
+Windows only: the Microsoft Visual C++ runtime (vcruntime140*.dll, msvcp140*.dll),
+when present, is redistributed under the Microsoft Visual Studio licence terms for
+distributable code.
+
+No game data, and no High-Resolution Art model, is included.
