@@ -85,6 +85,19 @@ else
     git clone -q "$TARGET" "$CLONE"
 fi
 git -C "$CLONE" rev-parse -q --verify HEAD >/dev/null || git -C "$CLONE" symbolic-ref HEAD refs/heads/main
+# Contributions merged on GitHub since the last sync would be overwritten by this snapshot. Stop and list them, unless
+# PUBLISH_ACCEPT_FOREIGN=1 says they were carried into this repository first (CONTRIBUTING.md).
+git -C "$CLONE" fetch -q origin 2>/dev/null || true
+if git -C "$CLONE" rev-parse -q --verify origin/main >/dev/null; then
+    git -C "$CLONE" merge -q --ff-only origin/main
+    last_sync=$(git -C "$CLONE" log -1 --format=%H --grep='^Sync from ' HEAD || true)
+    foreign=$(git -C "$CLONE" log --format='  %h %an: %s' ${last_sync:+$last_sync..}HEAD)
+    if [[ -n $foreign && ${PUBLISH_ACCEPT_FOREIGN:-0} != 1 ]]; then
+        printf 'the public repo has commits since the last sync, which this snapshot would overwrite:\n%s\n' "$foreign" >&2
+        echo "carry them into this repository first, then rerun with PUBLISH_ACCEPT_FOREIGN=1" >&2
+        exit 1
+    fi
+fi
 rsync -a --delete --exclude=/.git "$SNAP"/ "$CLONE"/
 git -C "$CLONE" add -A
 if git -C "$CLONE" diff --cached --quiet; then

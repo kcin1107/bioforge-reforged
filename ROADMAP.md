@@ -114,7 +114,7 @@ Decided 2026-11-21: a first public release, **v0.1 preview**, goes out before mi
 signed and notarized (universal), the Linux AppImages and the Windows zip as previews, from a new public MIT repository (a filtered
 export of this one, `tools/publish_public.sh`, without `re/decomp`), with a page on the author's website. This repository stays private.
 
-- [ ] Signed and notarized build. The game data is never included.
+- [x] Signed and notarized build. The game data is never included. (v0.1.0, 2026-11-21: universal, with the art model, on the public repository's Releases.)
 - [x] Short player guide: setup, controls, known differences (`PLAYER_GUIDE.md`).
 - [x] Detect the game data by checksum (size and MD5 of the GOG files, as ScummVM's detection tables do) and say which file is missing or unknown. GOG 2.1.0.14 English is the only known release; missing files stop the start, others are reported as unknown and still run.
 - [x] A changelog and a Known Issues list with each build, with a note on save compatibility (`CHANGELOG.md`).

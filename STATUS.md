@@ -44,8 +44,10 @@ formats, engine functions, semantics). Last updated 2026-11-20.
 - Done: `LICENSE` (MIT, with the game-data and trademark note); README opens with a player section; CHANGELOG, PLAYER_GUIDE for the
   preview; a bug report template (`.github/ISSUE_TEMPLATE`); `build-app.sh --sign` (universal, hardened runtime, timestamp, original
   icon, the art model) and `notarize.sh`; Debug > Save Frame as PNG and `BIOFORGE_SHOT` for the website screenshots (4x art, Readable Text).
-- Open: the public repository's name; notarization (Apple's updated developer agreement); the Linux packages for the release; the
-  Windows zip (the PC run); the website page; tag and upload. The HDcube model's author, Venomalia, allowed shipping the converted model (2026-11-21): signed builds include it.
+- **Released 2026-11-21:** v0.1.0 on https://github.com/kcin1107/bioforge-reforged (public, MIT; the first export is `fbe1316`,
+  "Sync from f3a5095"), release "BioForge 0.1 preview" with `BioForge-mac.zip` (notarized, universal, with the art model; checked
+  as a quarantined download), `BioForge-x86_64.AppImage`, `BioForge-aarch64.AppImage` and `SHA256SUMS.txt`. Open: the Windows zip
+  (the PC run), the website page (branch `bioforge-page` in the website repo, merged by the user). The HDcube model's author, Venomalia, allowed shipping the converted model (2026-11-21): signed builds include it.
 
 ## Fix 2026-11-21: the LANDPAD ledge stop traced (harness)
 

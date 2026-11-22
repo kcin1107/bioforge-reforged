@@ -12,6 +12,7 @@ PLAYER_GUIDE.md          short guide for players: setup, controls, known differe
 KNOWN_DIFFERENCES.md     fidelity policy, open gaps, kept quirks, port extras
 PLAYTEST.md              playtest sessions per area and how bugs are triaged
 CHANGELOG.md             what each build has, known issues, save compatibility
+CONTRIBUTING.md          how issues, Discussions and pull requests work with the public export
 LICENSE                  MIT for the port's code; the game, its data and the BioForge trademark are not covered
 .github/ISSUE_TEMPLATE/  the bug report template for the public repository
 STRUCTURE.md             this repository map
@@ -168,3 +169,6 @@ run from `main`:
 - It then replaces the clone's working tree (keeping its `.git`) and commits "Sync from <short sha>".
   A directory with a `.git` is used as the clone; a URL or bare repo path is cloned to a temp dir.
   It pushes only with `--push`.
+- Before replacing anything it fast-forwards the clone to the public `main` and stops if that has commits since
+  the last "Sync from" (a pull request merged on GitHub), since the snapshot would overwrite them. Carry them into
+  this repository first (CONTRIBUTING.md), then rerun with `PUBLISH_ACCEPT_FOREIGN=1`.
